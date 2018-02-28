@@ -7,17 +7,69 @@
         *{
             text-decoration:none;
             font-family:微软雅黑,Consolas,serif;
+            font-size:30px;
         }
         a{
             color:dodgerblue;
         }
+        @keyframes font {
+            from{opacity: 0}
+            to{opacity: 100}
+        }
+        img{
+            animation:font 5s;
+        }
+        p{
+            animation:font 5s;
+            font-size:30px;
+        }
+        marquee{
+            font-size:30px;
+        }
+        @keyframes typing {
+            from {
+                width:0;
+            }
+        }
+        @keyframes blink-caret {
+             50% {
+                 border-color:transparent;
+             }
+         }
+        h1 {
+              font:bold 200% Consolas,Monaco,monospace;
+              border-right:.1em solid;
+              width:16.5em;
+              /* fallback */
+              width:30ch;
+              /* # of chars */
+              margin:2em 1em;
+              white-space:nowrap;
+              overflow:hidden;
+              animation:typing 3s steps(30,end),/* # of steps = # of chars */
+              blink-caret .5s step-end infinite alternate;
+          }
+
     </style>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     </head>
     <body>
-        <img src="image/1.png" />
+        <img src="image/1.png" height="300" width="500"/>
+        <h1 style="font-size:30px;">Hello,World!</h1>
+        <p style="font-size:30px;">
+            var coder = "loveCode";<br />
+            if(coder = "loveCode") alert("I love you,Code...");
+
+        </p>
+
+        <marquee>alert("Hello,World!");<br />console.log("Hello,World!");<br />document.write("Hello,World");</marquee>
             <script>
-                $("body").append("<p>Hello,World!</p>");
+                $("body").append("<marquee>$(\"body\").append(\"Hello,World!\");</marquee>");
             </script>
+        <marquee>System.out.println("Hello,World!");</marquee>
+        <marquee>print("Hello,World!")</marquee>
+        <marquee>printf("Hello,World!");</marquee>
+        <marquee>echo("Hello,World!");print("Hello,World!");</marquee>
+
     </body>
 </html>
