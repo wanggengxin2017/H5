@@ -1,66 +1,81 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-    <meta charset="utf-8" />
-    <title>Hello,World!</title>
-    <style>
-        *{
-            text-decoration:none;
-            font-family:Consolas;
-            font-size:30px;
-        }
-        a{
-            color:dodgerblue;
-        }
-        @keyframes font {
-            from{opacity: 0}
-            to{opacity: 100}
-        }
-        img{
-            animation:font 5s;
-        }
-        p{
-            animation:font 5s;
-            font-size:30px;
-        }
-        marquee{
-            font-size:30px;
-        }
-        @keyframes typing {
-            from {
-                width:0;
+        <meta charset="utf-8" />
+        <title>Hello,World!</title>
+        <style>
+            *{
+                text-decoration:none;
+                font-family:Consolas;
+                font-size:30px;
             }
-        }
-        @keyframes blink-caret {
-             50% {
-                 border-color:transparent;
-             }
-         }
-        h1 {
-              font:bold 200% Consolas;
-              border-right:.1em solid;
-              width:16.5em;
-              /* fallback */
-              width:30ch;
-              /* # of chars */
-              margin:2em 1em;
-              white-space:nowrap;
-              overflow:hidden;
-              animation:typing 3s steps(30,end),/* # of steps = # of chars */
-              blink-caret .5s step-end infinite alternate;
-          }
+            body{
+                background-image: url(image/1.png);
+                background-size: 100% 100%;
+                height:100%;
+                color: #FFFFFF;
+            }
+            html{
+                height:100%;
+            }
+            a{
+                color:cyan;
+            }
+            @keyframes font {
+                from{opacity: 0}
+                to{opacity: 100}
+            }
+            /*img{
+                animation:font 5s;
+            }*/
+            p{
+                animation:font 5s;
+                font-size:30px;
+            }
+            marquee{
+                font-size:30px;
+            }
+            @keyframes typing {
+                from {
+                    width:0;
+                }
+            }
+            @keyframes blink-caret {
+                 50% {
+                    border-color:transparent;
+                 }
+            }
+            h1 {
+                font:bold 200% Consolas;
+                border-right:.1em solid;
+                width:16.5em;
+                width:30ch;
+                margin:2em 1em;
+                white-space:nowrap;
+                overflow:hidden;
+                animation:typing 3s steps(30,end),
+                blink-caret .5s step-end infinite alternate;
+            }
 
-    </style>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        </style>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+            function Wechat() {
+                alert("请在微信中搜索：myqq3279143805");
+            }
+        </script>
     </head>
     <body>
-        <audio src="music/SongOfHelloWorld.mp3" autoplay="autoplay" controls="controls">
+        <audio src="music/SongOfHelloWorld.mp3" autoplay="autoplay" controls="controls" loop="loop">
             <!--设置网页音乐自动播放-->
         </audio>
         <br />
-        <img src="image/1.png" height="300" width="500"/>
+        <!--<img src="image/1.png" height="300" width="500"/>-->
         <h1 style="font-size:30px;">Hello,World!</h1>
         <p style="font-size:30px;">
+            <a href="https://github.com/wanggengxin2017">GitHub</a>&nbsp;
+            <a href="javascript:wechat(); ">Wechat</a>&nbsp;
+            <a href="http://dwz.cn/7woBKq">QQ</a>    <br />
             var coder = "loveCode";<br />
             if(coder = "loveCode") alert("I love you,Code...");
 
@@ -73,7 +88,8 @@
         <marquee>System.out.println("Hello,World!");</marquee>
         <marquee>print("Hello,World!")</marquee>
         <marquee>printf("Hello,World!");</marquee>
-        <marquee>echo("Hello,World!");print("Hello,World!");</marquee>
+        <marquee>echo("Hello,World!");</marquee>
+        <marquee>print("Hello,World!");</marquee>
 
     </body>
 </html>
